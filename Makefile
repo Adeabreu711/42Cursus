@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: alde-abr <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: scambier <scambier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/11 15:16:24 by alde-abr          #+#    #+#              #
-#    Updated: 2024/11/11 15:16:27 by alde-abr         ###   ########.fr        #
+#    Updated: 2024/11/22 00:08:25 by scambier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ $(NAME): $(OBJ)
 
 #Compilation des fichiers .c en .o
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) -g3 $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ) $(OBJ_BONUS)
@@ -53,5 +53,9 @@ re: fclean all
 
 bonus : $(OBJ_BONUS)
 	ar rcs $(NAME) $(OBJ_BONUS)
+
+test: all
+	cc -g3 main.c libft.a
+	valgrind ./a.out
 
 .PHONY = all clean fclean re bonus
