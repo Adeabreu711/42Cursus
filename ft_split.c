@@ -59,7 +59,7 @@ char	**ft_split(char const *s, char c)
 	str = ft_calloc(ft_count_splits(s, c) + 1, sizeof(char *));
 	if (!str)
 		return (NULL);
-	while (s[i] == c)
+	while (s[i] && s[i] == c)
 		i++;
 	start = i;
 	while (s[++i])
