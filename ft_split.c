@@ -28,7 +28,7 @@ static int	ft_count_splits(char const *s, char c)
 	return (count);
 }
 
-static void	ft_freesplits(char **str)
+static char	**ft_freesplits(char **str)
 {
 	int	i;
 
@@ -36,6 +36,17 @@ static void	ft_freesplits(char **str)
 	while (str[++i])
 		free(str[i]);
 	free(str);
+	return (NULL);
+}
+
+static int	ft_get_splitstart(const char *s, char c)
+{
+	int	i;
+
+	i = -1;
+	while (s[i] && s[i] == c)
+		i++;
+	return (i);
 }
 
 /**
@@ -49,8 +60,8 @@ char	**ft_split(char const *s, char c)
 {
 	char	**str;
 	int		i;
-	int		start;
 	int		j;
+	int		start;
 
 	if (!s)
 		return (NULL);
@@ -59,9 +70,7 @@ char	**ft_split(char const *s, char c)
 	str = ft_calloc(ft_count_splits(s, c) + 1, sizeof(char *));
 	if (!str)
 		return (NULL);
-	while (s[i] && s[i] == c)
-		i++;
-	start = i;
+	start = ft_get_splitstart(s, c);
 	while (s[++i])
 	{
 		if (c != s[i] && (i == 0 || s[i - 1] == c))
@@ -70,10 +79,7 @@ char	**ft_split(char const *s, char c)
 		{
 			str[j] = ft_substr(s, start, i - start + 1);
 			if (!str[j++])
-			{
-				ft_freesplits(str);
-				return (NULL);
-			}
+				return (ft_freesplits(str));
 		}
 	}
 	return (str);
