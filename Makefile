@@ -54,7 +54,7 @@ re: fclean all
 bonus : $(OBJ_BONUS)
 	ar rcs $(NAME) $(OBJ_BONUS)
 
-test: all
+test: bonus
 	cc -g3 main.c libft.a
 	valgrind ./a.out
 

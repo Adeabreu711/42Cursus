@@ -31,18 +31,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		*(unsigned char *)dest++ = *(unsigned char *)src++;
 	return (dest - i);
 }
-
-// #include <string.h>
-// #include <stdio.h>
-// int	main(int argc, char *argv[])
-// {
-// 	char src[] = "1234";
-// 	char dest[] = "ABDC";
-// 	(void)argc;
-// 	// if(argc < 2 || argc > 2)
-// 	// 	return (0);
-// 	//printf("%s\n", (char*)ft_memcpy(src + 1, src, 3));
-// 	//printf("%s\n", (char*)memcpy(dest, src, 3));
-
-// 	printf("%s\n", src);
-// }

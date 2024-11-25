@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <bsd/string.h>
-
-size_t	ft_strlen(const char *s);
+#include "libft.h"
 
 /**
  * @brief Search a targeted string "little" in a string "big".
@@ -46,14 +44,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	char	*s1 = "test";
-// 	char	*s2 = "abcd";
-
-// 	int	i = 9;
-// 	printf("%s\n", ft_strnstr(s1, s2, i));
-// 	printf("%s\n", strnstr(s1, s2, i));
-// }

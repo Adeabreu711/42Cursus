@@ -29,12 +29,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s + i);
 	return ((char *)temp);
 }
-
-// int	main()
-// {
-// 	char	*str = "je suis un test";
-// 	char	c = 's';
-
-// 	printf("%s\n", ft_strrchr(str, c));
-// 	printf("%s\n", strrchr(str, c));
-// }

@@ -28,10 +28,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-// int	main()
-// {
-// 	//printf("%s\n", ft_memchr("je suis un test", 'j', 1));
-// 	printf("%s\n", ft_memchr("/|\x12\xff\x09\x42\2002\42|\\", '\200', 10));
-// 	printf("%s\n", memchr("|\x12\xff\x09\x42\2002\42|\\", '\200', 10));
-// }

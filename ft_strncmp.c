@@ -31,12 +31,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	return ((int)((unsigned char)s1[i] - (unsigned char)s2[i]));
 }
-
-// int	main()
-// {
-// 	const char s1[] = "12345";
-// 	const char s2[] = "";
-
-// 	printf("%i\n", strncmp(s1, s2, 2));
-// 	printf("%i\n", ft_strncmp(s1, s2, 2));
-// }

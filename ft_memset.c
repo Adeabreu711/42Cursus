@@ -30,17 +30,3 @@ void	*ft_memset(void *s, int c, size_t n)
 		str[i] = c;
 	return (s);
 }
-
-// #include <string.h>
-// #include <stdio.h>
-// int	main(int argc, char *argv[])
-// {
-// 	char t[] = "4002";
-// 	(void)argc;
-// 	// if(argc < 2 || argc > 2)
-// 	// 	return (0);
-// 	printf("%s\n", (char*)ft_memset(t, '0', 4));
-// 	printf("%s\n", (char*)memset(t, '0', 4));
-
-// 	printf("%s\n", t);
-// }

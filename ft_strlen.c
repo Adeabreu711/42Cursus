@@ -25,12 +25,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-// #include <stdio.h>
-// int	main(int argc, char *argv[])
-// {
-// 	//(void)argc;
-// 	if(argc < 2 || argc > 2)
-// 		return (0);
-// 	printf("%i\n", ft_strlen(argv[1]));
-// }

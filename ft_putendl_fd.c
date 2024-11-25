@@ -25,11 +25,3 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, &s[i], 1);
 	write(fd, "\n", 1);
 }
-
-// #include <fcntl.h>
-// int	main()
-// {
-// 	int fd;
-// 	fd = open("test", O_WRONLY);
-// 	t_putendl_fd("je suis un oiseau.", fd);
-// }

@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/**
+ * @return A pointer directing to the last element of the given list.
+ */
 t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*temp;
@@ -23,19 +26,3 @@ t_list	*ft_lstlast(t_list *lst)
 		temp = temp->next;
 	return (temp);
 }
-
-// int	main()
-// {
-// 	int	i = 0;
-// 	t_list	*lst = malloc(sizeof(t_list));
-
-// 	t_list	*t = lst;
-// 	while (i < 5)
-// 	{
-// 		printf("ADD\n");
-// 		t->next = malloc(sizeof(t_list));
-// 		t = t->next;
-// 		i++;
-// 	}
-// 	printf("%i\n", ft_lstsize(lst));
-// }

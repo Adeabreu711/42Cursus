@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/**
+ * @return A pointer to a list with the given content added.
+ */
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*list;

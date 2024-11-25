@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alde-abr <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: alde-abre <alde-abre@42student.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 18:27:16 by alde-abr          #+#    #+#             */
-/*   Updated: 2024/11/17 18:27:17 by alde-abr         ###   ########.fr       */
+/*   Updated: 2024/11/22 15:52:19 by alde-abre        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (temp * sign);
 }
-
-// #include <stdlib.h>
-// int	main()
-// {
-// 	printf("%i\n", ft_atoi("\007 8"));
-// 	//printf("%i\n", atoi("+42je suis un test"));
-// }

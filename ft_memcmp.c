@@ -30,12 +30,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	return ((int)(*(unsigned char *)(s1 + i)) - (*(unsigned char *)(s2 + i)));
 }
-
-// int	main()
-// {
-// 	const char s1[] = "teste";
-// 	const char s2[] = "teste";
-
-// 	printf("%i\n", ft_memcmp(s1, s2, 0));
-// 	printf("%i\n", memcmp(s1, s2, 0));
-// }

@@ -10,41 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-
 /**
- * @brief Trim characters in a string.
+ * @brief Trim start/end characters in a string.
  * @param {charconst*} "s1" pointer to the string to cut.
  * @param {char} "set" a string containing a set of char to trim in
  * the given string "s1".
- * @return A copy of the string "s1" without the characters given in "set".
+ * @return A copy of the string "s1" without the characters given in "set"
+ * at the start and the end of the string.
  */
-// char	*ft_strtrim(char const *s1, char const *set)
-// {
-// 	char			*str;
-// 	int				i;
-// 	unsigned int	count;
-
-// 	i = -1;
-// 	count = 0;
-// 	while (s1[++i])
-// 		if (ft_strchr(set, s1[i]))
-// 			count++;
-// 	str = malloc((i - count + 1) * sizeof(char));
-// 	if (!str)
-// 		return (NULL);
-// 	i = -1;
-// 	count = 0;
-// 	while (s1[++i])
-// 		if (!ft_strchr(set, s1[i]))
-// 			str[count++] = s1[i];
-// 	return (str);
-// }
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char			*str;
@@ -69,9 +44,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	return (str);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	printf("%s\n", ft_strtrim("q", "q"));
-// }

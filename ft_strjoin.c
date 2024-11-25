@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 /**
@@ -38,9 +37,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		str[s1_len + i] = s2[i];
 	return (str);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	printf("%s\n", ft_strjoin("je suis ", "un oiseau."));
-// }

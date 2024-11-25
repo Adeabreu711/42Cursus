@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/**
+ * @brief Free the memory of the given list and all the other
+ * linked list with the given function.
+ */
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;

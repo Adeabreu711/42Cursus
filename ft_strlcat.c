@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-size_t	ft_strlen(const char *s);
+#include "libft.h"
 
 /**
  * @brief Concatenate the string "src" to the string "dest", the size must
@@ -37,13 +35,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[dest_length] = '\0';
 	return (ft_strlen(dest) + ft_strlen(&src[i]));
 }
-
-// #include <stdio.h>
-// #include <bsd/string.h>
-// int	main()
-// {
-// 	char	dest[100] = "ABCDEF";
-// 	char	*src = "1234";
-// 	//printf("%i, %s", strlcat(dest, src, 8), dest);
-// 	printf("%i, %s", ft_strlcat(dest, src, 8), dest);
-// }

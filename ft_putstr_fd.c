@@ -23,11 +23,3 @@ void	ft_putstr_fd(char *s, int fd)
 	while (s[++i])
 		write(fd, &s[i], 1);
 }
-
-// #include <fcntl.h>
-// int	main()
-// {
-// 	int fd;
-// 	fd = open("test", O_WRONLY);
-// 	ft_putstr_fd("je suis un oiseau.", fd);
-// }

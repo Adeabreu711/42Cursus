@@ -12,45 +12,12 @@
 
 #include "libft.h"
 
+/**
+ * @brief Free the memory of the given list with the given function.
+ */
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
 	if (del)
 		del(lst->content);
 	free(lst);
 }
-
-// void	test(void *v)
-// {
-// 	t_list	*temp;
-
-// 	if (!v)
-// 		return ;
-// 	temp  = (t_list *)v;
-// 	free(temp->content);
-// }
-
-// int	main()
-// {
-// 	int	i = 0;
-// 	t_list	*lst = malloc(sizeof(t_list));
-// 	t_list	*temp = lst;
-// 	while (i < 5)
-// 	{
-// 		temp->next = malloc(sizeof(t_list));
-// 		temp->content = malloc(2 * sizeof(char));
-// 		*(char *)temp->content = (i + '0');
-// 		temp = temp->next;
-// 		i++;
-// 	}
-// 	void (*t)(void*) = test;
-
-// 	ft_lstdelone(lst->next->next, t);
-
-// 	temp = lst;
-// 	while (temp->next)
-// 	{
-// 		printf("content : %s\n", (char *)temp->content);
-// 		printf("next\n");
-// 		temp = temp->next;
-// 	}
-// }

@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 /**
  * @brief Copy up to size - 1 of string of the "src" to the "dest" area.
@@ -33,14 +32,3 @@ size_t	ft_strlcpy(char *dst, char *src, size_t siz)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
-
-// #include <bsd/string.h>
-// #include <stdio.h>
-// int	main()
-// {
-// 	char	src[] = "AAAA";
-// 	char	dest[] = "Grade";
-
-// 	printf("should return : %i\n", ft_strlcpy(dest, src, 4));
-// 	printf("return : %i\n", strlcpy(dest, src, 4));
-// }

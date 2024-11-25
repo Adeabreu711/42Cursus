@@ -55,13 +55,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-// int	main()
-// {
-// 	char	*str;
-
-// 	str = ft_itoa(2);
-// 	//printf("%s\n" ,ft_itoa(-2147483647 -1));
-// 	printf("%s\n" ,str);
-// 	free(str);
-// }

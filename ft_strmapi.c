@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *s);
+#include "libft.h"
 
 /**
  * @brief Aplly a function to all char of a new string
@@ -37,14 +35,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
-// char	ft_zero(unsigned int i, char c)
-// {
-// 	return (c);
-// }
-
-// int	main()
-// {
-// 	char (*f)(unsigned int, char) = ft_zero;
-// 	printf("%s\n", ft_strmapi("je suis un oiseau", ft_zero));
-// }

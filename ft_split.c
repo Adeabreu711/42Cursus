@@ -11,9 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-
-char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 static int	ft_count_splits(char const *s, char c)
 {
@@ -84,18 +81,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (str);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	char **str;
-// 	char *	s = "\0aa\0bbb";
-// 	char c = '\0';
-
-// 	//int	count = ft_count_splits(s, c);
-// 	str = ft_split(s, c);
-
-// 	int i = -1;
-// 	while (str[++i])
-// 		printf("str[%i] : \"%s\"\n", i, str[i]);
-// }

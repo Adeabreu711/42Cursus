@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <string.h>
+
 /**
  * @brief Copy "n" bytes of the "src" memory area pointed to the "dest" area
  * , pointers can ovelarp.
@@ -34,18 +35,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			*(unsigned char *)(dest + i) = *(unsigned char *)(src + i);
 	return (dest);
 }
-
-// #include <string.h>
-// #include <stdio.h>
-// int	main(int argc, char *argv[])
-// {
-// 	char src[] = "1234";
-// 	char dest[] = "ABDC";
-// 	(void)argc;
-// 	// if(argc < 2 || argc > 2)
-// 	// 	return (0);
-// 	printf("%s\n", (char*)ft_memmove(src + 1, src, 3));
-// 	//printf("%s\n", (char*)memmove(dest, src, 3));
-
-// 	//printf("%s\n", src);
-// }

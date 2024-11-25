@@ -35,14 +35,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 	write(fd, &c, 1);
 }
-
-// #include <stdio.h>
-// #include <fcntl.h>
-// int	main()
-// {
-// 	int fd;
-// 	fd = open("test", O_WRONLY);
-
-// 	int nb = -2147;
-// 	ft_putnbr_fd(nb, fd);
-// }

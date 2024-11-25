@@ -27,16 +27,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	while (s[++i])
 		f(i, &s[i]);
 }
-
-// void	ft_alphabet(unsigned int i, char *c)
-// {
-// 	*c = 'a' + i;
-// }
-
-// int	main()
-// {
-// 	char str[] = "je suis un oiseau.";
-// 	void (*f)(unsigned int, char *) = ft_alphabet;
-// 	ft_striteri(str, ft_alphabet);
-// 	printf("%s\n", str);
-// }

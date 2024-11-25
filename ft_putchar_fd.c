@@ -19,11 +19,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-
-// #include <fcntl.h>
-// int	main()
-// {
-// 	int fd;
-// 	fd = open("test", O_WRONLY);
-// 	ft_putchar_fd('c', fd);
-// }

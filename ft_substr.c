@@ -11,10 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
 
-//size_t	ft_strlen(const char *s);
 /**
  * @param {charconst*} "s" a pointer to a string.
  * @param {unisgnedstart} "start" the start of the area to copy.
@@ -43,13 +40,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		dup[len] = s[(start) + len];
 	return (dup);
 }
-
-// int	main()
-// {
-// 	char	*s = "hola";
-// 	char	*str;
-
-// 	//str = ft_substr(s, 4294967295, 2);
-// 	str = ft_substr(s, 42, 2);
-// 	printf("%s\n", str);
-// }

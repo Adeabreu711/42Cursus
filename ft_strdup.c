@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *s);
+#include "libft.h"
 
 /**
  * @return A pointer directing to a copy of the given string "s".
@@ -31,13 +29,3 @@ char	*ft_strdup(const char *s)
 		dup[s_len] = s[s_len];
 	return (dup);
 }
-
-// #include <stdio.h>
-// int	main()
-// {
-// 	char	*s = "Je suis un oiseau";
-// 	char	*str;
-
-// 	str = ft_strdup(s);
-// 	printf("%s\n", str);
-// }
